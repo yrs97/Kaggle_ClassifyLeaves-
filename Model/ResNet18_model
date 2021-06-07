@@ -1,0 +1,23 @@
+## 3.1 ResNet18_model
+
+class ResNet18_model(nn.Module):
+    def __init__(self, num_class):
+        super(ResNet18_model,self).__init__()
+        # 继承父类的所有属性和方法, 并用父类的方法进行初始化
+        model_conv = models.resnet18(pretrained=True)
+            # 使用模型结构 ResNet18,并且 use预训练参数
+        model_conv.avgpool = nn.AdaptiveAvgPool2d(1)
+            # 自适应平均池化，仅指定输出大小，特征数目不变
+        model_conv = nn.Sequential(*list(model_conv.children())[:-1]) # 去除最后一个fc layer
+            # 复制model_conv 的模型层次，仅使用预训练模型的一部分
+        self.cnn = model_conv
+        self.fc = nn.Linear(512, num_class)
+            # full connect layer output has err: 11
+
+    def forward(self, img):
+        feat = self.cnn(img)
+            # img进行cnn 网络提取featrue
+        feat = feat.view(feat.shape[0], -1)
+        feat = self.fc(feat)
+
+        return feat
