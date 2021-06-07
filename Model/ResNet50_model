@@ -1,0 +1,21 @@
+class ResNet50_model(nn.Module):
+    def __init__(self, num_class):
+        super(ResNet50_model,self).__init__()
+        model_conv = models.resnet50(pretrained=True)
+        model_conv.avgpool = nn.AdaptiveAvgPool2d(1)
+        model_conv = nn.Sequential(*list(model_conv.children())[:-1])
+        self.cnn = model_conv
+        self.hd_fc = nn.Linear(2048, num_class)
+        # self.dropout = nn.Dropout(0.2)
+        # self.fc = nn.Linear(256, num_class)  # 双层 -->  单层
+
+
+    def forward(self,img):
+        feat = self.cnn(img)
+        feat = feat.view(feat.shape[0], -1)
+
+        feat = self.hd_fc(feat)
+        # feat = self.dropout(feat)
+        # out = self.fc(feat)
+
+        return feat
