@@ -6,20 +6,20 @@
     * https://www.kaggle.com/c/classify-leaves
 * [B站视频](#https://www.bilibili.com/video/BV1z64y1o7iz/)<br>
     * https://www.bilibili.com/video/BV1z64y1o7iz/
-* [beasline: ](#)
+* beasline:
     * [Datawhale 零基础入门CV赛事-Baseline：(主体结构)](https://tianchi.aliyun.com/notebook-ai/detail?postId=108342)
     * [simple-resnet-baseline：（细节）](https://www.kaggle.com/nekokiku/simple-resnet-baseline)
 
 
 #### Model
-* [ResNet18](#)
-* [ResNet50](#)
-* [MobileNet_V2](#)
+* ResNet18
+* ResNet50
+* MobileNet_V2
 
 
 #### Record 
 
-* [分数](#)
+* 分数
   * [0.00522] : submit_2021060201.csv
     * 基于ResNet18
     * 步骤正确，Loss and Acc 都很不错。但是分数极低。
