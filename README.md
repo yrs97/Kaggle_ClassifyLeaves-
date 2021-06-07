@@ -40,6 +40,6 @@
   * [0.91090] : submit_2021060402.csv 
     * 基于ResNet50
     * lr:2e-3,epoch:60
-  * [0.93545:[code](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.93545_Mobinet_model)] : submit_2021060601.csv
+  * [0.93545] : submit_2021060601.csv  [code](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.93545_Mobinet_model)
     * MobileNet_V2
     * lr:1e-3,epoch:160
