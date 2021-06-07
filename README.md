@@ -12,9 +12,9 @@
 
 
 #### Model
-* ResNet18
-* ResNet50
-* MobileNet_V2
+* [ResNet18](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Model/ResNet18_model)
+* [ResNet50](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Model/ResNet50_model)
+* [MobileNet_V2](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Model/Mobilenet_model)
 
 
 #### Record 
