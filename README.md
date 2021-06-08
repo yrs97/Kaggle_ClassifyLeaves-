@@ -43,13 +43,13 @@
   * [[0.93545](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.93545_Mobinet_model)] : [submit_2021060601.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060601.csv)
     * MobileNet_V2
     * lr:1e-3,epoch:160
-  * [0.95181] : [submit_2021060801_loss.csv]
+  * [[0.95181](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.95181_ResNet50_model)] : [submit_2021060801_loss.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060801_loss.csv)
     * ResNet50
     * lr = 0.01
-      momentum = 0.9                          # 动量(momentum)的引入就是为了加快SGD学习过程
-      weights_dacay = 1e-4
-      lr_scheduler = CosineAnnealingWarmRestarts(optimizer, T_0=10, T_mult=2,eta_min=0)
-      epoch = 34                              # 11-th epoch 出现最佳loss-0.15,acc-95.57
+    * momentum = 0.9                          # 动量(momentum)的引入就是为了加快SGD学习过程
+    * weights_dacay = 1e-4
+    * lr_scheduler = CosineAnnealingWarmRestarts(optimizer, T_0=10, T_mult=2,eta_min=0)
+    * epoch = 34                              # 11-th epoch 出现最佳loss-0.15,acc-95.57
 
 #### 提升点
 
