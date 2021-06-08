@@ -56,6 +56,8 @@ Study Note
 
    * Transform：
       * 图像增强
+         * 20210608: 
+            * transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]) ：导致过拟合（trainAcc High, valAcc low）
    * Color:
       * RGB -> L
    * Model:
@@ -85,8 +87,13 @@ Study Note
          * 2. model1 label , model2 label , model3 label ==> voting ==> final label
          * 3. model1_1 probs + ... + model1_n probs ==> mode1 label, <br>
               model2 label与model3获取的label方式与1相同  ==> voting ==> final label
+    
+      * 参考：<br>
+      [1]. 2021版调参上分手册：https://mp.weixin.qq.com/s/oi3wXRv9NC5lL831s7AsQg<br>
+   
    
 ####  知识点
+
    * [模型保存](https://www.cnblogs.com/zkweb/p/12843741.html)
 ```
       import gzip
@@ -94,5 +101,4 @@ Study Note
       new_model.load_state_dict(torch.load(gzip.GzipFile("model.pt.gz", "rb")))     #load
 ```
    
-   * 参考：<br>
-      [1]. 2021版调参上分手册：https://mp.weixin.qq.com/s/oi3wXRv9NC5lL831s7AsQg<br>
+
