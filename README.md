@@ -1,4 +1,5 @@
 # Kaggle_ClassifyLeaves
+Study Note
 动手学深度学习_竞赛2_20210602
 
 #### Competition Address
@@ -84,5 +85,14 @@
          * 2. model1 label , model2 label , model3 label ==> voting ==> final label
          * 3. model1_1 probs + ... + model1_n probs ==> mode1 label, <br>
               model2 label与model3获取的label方式与1相同  ==> voting ==> final label
+   
+####  知识点
+   * 模型保存
+```
+      import gzip
+      torch.save(model.state_dict(), gzip.GzipFile("model.pt.gz", "wb"))            #save
+      new_model.load_state_dict(torch.load(gzip.GzipFile("model.pt.gz", "rb")))     #load
+```
+   
    * 参考：<br>
       [1]. 2021版调参上分手册：https://mp.weixin.qq.com/s/oi3wXRv9NC5lL831s7AsQg<br>
