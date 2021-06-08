@@ -51,6 +51,11 @@ Study Note
     * weights_dacay = 1e-4
     * lr_scheduler = CosineAnnealingWarmRestarts(optimizer, T_0=10, T_mult=2,eta_min=0)
     * epoch = 34                              # 11-th epoch 出现最佳loss-0.15,acc-95.57
+  * [[0.96318](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.96318_MobileNet_model)] : [submit_2021060804.csv]
+    * [MobileNet_WD-Acc-96.68.pth.gz](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/pth/MobileNet_WD-Acc-96.68.pth.gz)
+    * lr = 0.005
+    * transforms.ColorJitter(0.3, 0.3, 0.2), # 修改亮度、对比度和饱和度
+    * shuffle=True
 
 #### 提升点
 
