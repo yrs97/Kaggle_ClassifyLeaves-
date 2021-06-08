@@ -25,7 +25,7 @@
     * 步骤正确，Loss and Acc 都很不错。但是分数极低。
     * 引发问题：图像增强原因
     <br>
-  * [0.88181] : submit_2021060306.csv
+  * [0.88181] : [submit_2021060306.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060306.csv)
     * 基于ResNet18
     * 根据beasline(细节)
       * 修改图像增强仅Resize(),ToTensor(),RandomHorizontalFlip(p=0.5),RandomRotation(5)
@@ -33,14 +33,14 @@
     * criterion = nn.CrossEntropyLoss()
     * optimizer = torch.optim.SGD
     <br>
-  * [0.92181] : submit_2021060401.csv
+  * [0.92181] : [submit_2021060401.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060401.csv)
     * 基于ResNet18
     * lr:2e-3,epoch:160
     <br>
-  * [0.91090] : submit_2021060402.csv 
+  * [0.91090] : [submit_2021060402.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060402.csv)
     * 基于ResNet50
     * lr:2e-3,epoch:60
-  * [[0.93545](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.93545_Mobinet_model)] : submit_2021060601.csv 
+  * [[0.93545](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.93545_Mobinet_model)] : [submit_2021060601.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060601.csv)
     * MobileNet_V2
     * lr:1e-3,epoch:160
 
