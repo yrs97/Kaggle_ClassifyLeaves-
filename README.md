@@ -87,7 +87,7 @@ Study Note
               model2 label与model3获取的label方式与1相同  ==> voting ==> final label
    
 ####  知识点
-   * 模型保存
+   * [模型保存](https://www.cnblogs.com/zkweb/p/12843741.html)
 ```
       import gzip
       torch.save(model.state_dict(), gzip.GzipFile("model.pt.gz", "wb"))            #save
