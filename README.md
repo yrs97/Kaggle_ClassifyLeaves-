@@ -44,8 +44,8 @@ Study Note
   * [[0.93545](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.93545_Mobinet_model)] : [submit_2021060601.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060601.csv)
     * MobileNet_V2
     * lr:1e-3,epoch:160
-  * [[0.95181](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.95181_ResNet50_model)] : [submit_2021060801_loss.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060801_loss.csv)
-    * ResNet50
+  * [[0.95181](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/Code/0.95181_ResNet50_model)] : [submit_2021060801_loss.csv | ubmit_2021060802_acc.csv](https://github.com/standbyme-ge/Kaggle_ClassifyLeaves-/blob/main/csv/submit_2021060801_loss.csv)
+    * ResNet50 | MobileNet_V2 :MobileNet_WD-Acc-95.30.pth
     * lr = 0.01
     * momentum = 0.9                          # 动量(momentum)的引入就是为了加快SGD学习过程
     * weights_dacay = 1e-4
