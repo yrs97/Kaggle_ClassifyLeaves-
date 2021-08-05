@@ -101,6 +101,10 @@ Study Note
 
    * [模型保存](https://www.cnblogs.com/zkweb/p/12843741.html)
 ```
+
+      torch.save(model.state_dict(), "model.pt")                                    #save
+      model.load_state_dict(torch.load("model.pt"))                                 #load
+      
       import gzip
       torch.save(model.state_dict(), gzip.GzipFile("model.pt.gz", "wb"))            #save
       new_model.load_state_dict(torch.load(gzip.GzipFile("model.pt.gz", "rb")))     #load
